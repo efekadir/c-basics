@@ -6,8 +6,9 @@ void letterCounter(char text[], int n){
     int i, currentLetterAmount = 1;
 
     if(n == 0){
-    return;
-    }    
+        return;
+    }
+    
     for(i = 0; i < n - 1; i++){
         if(text[i] == text[i + 1]){
             currentLetterAmount++;
