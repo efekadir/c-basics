@@ -12,9 +12,13 @@ int main(){
     unsigned int result = n1 & n2;
 
     printf("Result in binary: ");
+    
     for(i = 0; i < 32; i++){
         printf("%c", ((result & writer) ? '1' : '0'));
         writer >>= 1;
     }
+    
     printf("\nResult in decimal: %d", result);
+
+    return 0;
 }
